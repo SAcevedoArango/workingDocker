@@ -28,7 +28,7 @@ public class App {
             connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
 
             Statement st = connection.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM alumno LIMIT 10");
+            ResultSet rs = st.executeQuery("SELECT * FROM User LIMIT 10");
             while (rs.next()) {
                 System.out.print("Column 1 returned ");
                 System.out.println(rs.getString(1));
